@@ -65,10 +65,10 @@ def get_stock_price(symbol: str) -> dict:
     api_key = os.getenv("ALPHAVANTAGE_API_KEY")
     if not api_key:
         raise ValueError("ALPHAVANTAGE_API_KEY is not set in the environment")
-
+ 
     url = (
         "https://www.alphavantage.co/query"
-        f"?function=GLOBAL_QUOTE&symbol={symbol}&apikey={api_key}"
+        f"?function=GLOBAL_QUOTE&symbol={symbol}&apikey=O5JCPHP8YELYTM9P"
     )
     r = requests.get(url)
     return r.json()
